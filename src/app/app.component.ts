@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'read_time_ang';
+  readTime!: string;
+  onReadTimeCalculated(readTimeStr: string) {
+    this.readTime = readTimeStr;
+  } 
 }
